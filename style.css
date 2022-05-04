@@ -1,0 +1,153 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    height: 800px;
+    z-index: 999;
+    background-color: rgba(159, 157, 150, 0.517);
+}
+#titreH2{
+    margin: 40px 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    color: rgba(159, 157, 150, 0.845);
+}
+.container_equipe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+
+}
+.section2{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(159, 157, 150);
+}
+.section3{
+    position: absolute;
+    top: 1200px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(126, 125, 119);
+}
+
+.boites{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    /* overflow: hidden; */
+    box-shadow: 0 60px 40px -50px;
+    transition: all 0.8s;
+    position: relative;
+    /* margin : auto; */
+}
+.border {
+    display: flex;
+    flex-direction: column;
+
+    width: 190px;
+    height: 240px;
+    border-radius: 10px;
+    transition: all 1s;
+    position: relative;
+  }
+  .border:hover {
+      border: 1.5px solid white;
+  }
+.boite1{
+    background: url(https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60) center center no-repeat;
+    transition: all 0.6s;
+    filter: grayscale(100%) contrast(135%) brightness(120%);
+    background-size: 320px;
+    /* filter: invert(1); */
+}
+.boite1:hover{
+    background: url(https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60) left center no-repeat;
+    background-size: 420px;
+    /* filter: grayscale(100%); */
+
+
+    /* filter: none; */
+}
+
+.boite2{
+    background: url(https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60) center center no-repeat;
+    transition: all 0.6s;
+    background-size: 230px;
+    filter: grayscale(100%);
+
+ }
+.boite2:hover{
+    background: url(https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60) left center no-repeat;
+    transition: all 0.6s;
+    background-size: 350px;
+    /* filter: none; */
+ }
+.boite3{
+    background: url(https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60) center center no-repeat;
+    background-size: 220px;
+    transition: all 0.6s;
+    position: relative;
+    filter: grayscale(100%) contrast(115%);
+
+}
+.boite3:hover{
+    background: url(https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60) left center no-repeat;
+    background-size: 330px;
+    /* filter: none; */
+}
+
+.boites .border h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: all 1s;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 40px;
+    height: 130px;
+    top: 100px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+a{
+    color: white;
+}
+.fab{
+    opacity: 0;
+    transition: all 1s;
+}
+.boites:hover .fab{
+    opacity: 1;
+}
+.boites:hover h2{
+    opacity: 1;
+}
